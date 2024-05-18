@@ -1,12 +1,19 @@
-# classificador-nivel-heroi
-Baseado no xp do herói, classifica o seu nível: 
-Se XP for menor do que 1.000 = Ferro
-Se XP for entre 1.001 e 2.000 = Bronze
-Se XP for entre 2.001 e 5.000 = Prata
-Se XP for entre 6.001 e 7.000 = Ouro
-Se XP for entre 7.001 e 8.000 = Platina
-Se XP for entre 8.001 e 9.000 = Ascendente
-Se XP for entre 9.001 e 10.000= Imortal
-Se XP for maior ou igual a 10.001 = Radiante
+# Calculadora de Ranqueamento de Heróis
 
-No arquivo index.py tem a resolução de código em python e em JS;
+Este repositório contém uma série de scripts Python para calcular o ranqueamento de heróis com base em suas vitórias e derrotas, além de classificar os heróis de um jogo fictício.
+
+## Arquivos
+
+2. **calcularRanqueada.py**:
+   - Este arquivo contém uma função chamada calcular que calcula o saldo de vitórias e derrotas de um herói e determina o seu nível com base no número de vitórias.Também inclui uma função obter_numero para validar a entrada do usuário. Exemplo de uso é fornecido no final do arquivo.
+
+3. **classificarheroi.py**:
+   - Este arquivo contém uma função chamada obter_nivel que determina o nível do herói com base em sua experiência. Exemplo de uso não está incluído no arquivo, pois a função é destinada a ser usada como parte de um script maior.
+   - 
+4. **classofgame.py**:
+   - Este arquivo contém uma classe Hero que representa um herói com atributos como nome, idade e tipo. Inclui métodos para atacar (atacar) e para representação de string (__str__). Exemplo de uso é fornecido no final do arquivo.
+
+## Uso
+
+1. Certifique-se de ter Python instalado em seu ambiente.
+2. Clone o repositório: git clone <url-do-repositório>
