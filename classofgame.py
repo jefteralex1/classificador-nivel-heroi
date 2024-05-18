@@ -5,19 +5,19 @@ class Hero:
         self.tipo = tipo
 
     def atacar(self):
-        if self.tipo == "mago":
-            ataque = "usou magia"
-        elif self.tipo == "guerreiro":
-            ataque = "usou espada"
-        elif self.tipo == "monge":
-            ataque = "usou artes marciais"
-        elif self.tipo == "ninja":
-            ataque = "usou shuriken"
-        else:
-            ataque = "ataque indefinido"
+        ataques = {
+            "mago": "usou magia",
+            "guerreiro": "usou espada",
+            "monge": "usou artes marciais",
+            "ninja": "usou shuriken"
+        }
         
-        mensagem = f"O {self.tipo} atacou usando {ataque}"
+        ataque = ataques.get(self.tipo, "ataque indefinido")
+        mensagem = f"O {self.tipo} {self.nome} atacou usando {ataque}"
         return mensagem
+
+    def __str__(self):
+        return f"{self.nome}, {self.idade} anos, {self.tipo}"
 
 # Exemplo de uso
 heroi1 = Hero("Gandalf", 200, "mago")
